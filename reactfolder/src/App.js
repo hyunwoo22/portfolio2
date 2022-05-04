@@ -1,5 +1,5 @@
 import CoinConverter from "./coinconverter/CoinConverter";
-import Movie from "./movieList/Movie";
+import Movie from "./movielist/Movie";
 import Todo from "./todolist/Todo";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './routes/Home';

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Movie from "../movieList/Movie";
+import Movie from "../movielist/Movie";
 import PropTypes from 'prop-types';
 
 function Home(){
