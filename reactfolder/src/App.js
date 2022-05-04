@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import CoinConverter from "./coinconverter/CoinConverter";
+import Movie from "./movieList/Movie";
+import Todo from "./todolist/Todo";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './routes/Home';
+import Detail from "./routes/Detail";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+      {/* <Todo /> */}
+      {/* <CoinConverter /> */}
+      {/* <Movie /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/movie/:id' element={<Detail />}></Route>
+        </Routes>
+      </BrowserRouter>
+      </>
+
   );
 }
 
